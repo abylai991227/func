@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+ //Задания 1   
+
+const greet = function(wod) {
+   console.log("Hello, " + wod + "!");
+};
+
+greet("world"); 
+
+//Задания 2
+
+function Hello(name) {
+   console.log("Hello, " + name + "!");
+}
+
+Hello("Abylai"); 
+Hello("Raimbek");
+Hello("Temirlan");
+
+//Задания 3
+
+function sum(a, b, c) {
+   return a + b - c;
+}
+
+
+
+console.log(sum(6, 8, 2));
+
+//Задания 4
+function isEven(number) {
+    return number % 4 === 0;  
+}
+
+console.log(isEven(4));  
+console.log(isEven(16));  
+console.log(isEven(40)); 
+console.log(isEven(63))
+//Задания 5
+
+
+function checkNums(a, b) {
+   if (a > b) {
+       return "Первая больше";
+   } else if (a < b) {
+       return "Вторая больше";
+   } else {
+       return "Числа равны";
+   }
+}
+
+console.log(checkNums(40, 50)); 
+console.log(checkNums(30, 20));
+console.log(checkNums(40, 40));
+
+//Задания 6
+function getInitials(Name, familiya) {
+   
+return Name.charAt(0).toUpperCase() + "." + familiya.charAt(0).toUpperCase() + ".";
+}
+
+
+console.log(getInitials("Абылай", "Кадырбеков")); 
+console.log(getInitials("Шынгыс", "Серикбол")); 
+console.log(getInitials("Султан", "Даутбаев")); 
+
+//Задания 7
+function square(ab){
+    return ab * ab;
+}
+function cube(ab){
+    return square =(ab) * ab;
+}
+console.log(square(5));
+console.log(cube(3));
+//Задания 8
+const sumb = (a, b, c) => a + b - c;
+
+console.log(sumb(6, 8, 2)); 
+
+//доп
+function getFactorial(num) {
+    if (num < 0) {
+        return "Факториал для отрицательных чисел не существует";  
+    }
+    if (num === 0) {
+        return 1;  
+    }
+    return num * getFactorial(num - 1);  
+}
+
+
+console.log(getFactorial(8));  
+console.log(getFactorial(5));  
+console.log(getFactorial(0));  
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
